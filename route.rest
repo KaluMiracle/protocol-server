@@ -1,0 +1,97 @@
+GET http://localhost:3001/auth/
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+POST http://localhost:3001/auth/signup
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+{
+    "email":"miraclek@gmail.com",
+    "password": "300000",  
+    "name": "miracle"
+}
+###
+POST http://localhost:3001/auth/signin
+content-type: application/json
+
+{
+    "email":"miraclek@gmail.com",
+    "password": "300000"
+}
+
+###
+GET http://localhost:3001/user/posts
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+
+###
+POST http://localhost:3001/user/posts
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+{
+    "caption":"caption",
+    "body": "300000"
+}
+
+###
+DELETE  http://localhost:3001/user/posts/63b07e0ed226c2dc3f713c9d
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+POST http://localhost:3001/user/like-post
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+{
+    "post_id":"63b08235a24e2ce8494150f0"   
+}
+
+###
+POST http://localhost:3001/user/star-post
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+{
+    "post_id":"63b08235a24e2ce8494150f0",    
+    "stars": 2
+}
+
+###
+GET  http://localhost:3001/posts
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+GET  http://localhost:3001/posts/63b08235a24e2ce8494150f0
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+GET http://localhost:3001/posts/63b08235a24e2ce8494150f0/comments
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+POST http://localhost:3001/posts/63b08235a24e2ce8494150f0/comments
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+{
+
+    "body":"post_id"   
+}
+
+###
+DELETE http://localhost:3001/posts/63b08235a24e2ce8494150f0/comments/63b08654480323366fa8f628
+content-type: application/json
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+
+###
+POST http://localhost:3001/posts/63b08235a24e2ce8494150f0/comments/63b08750db917fb0a89bddba/like
+Authorization: Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYzYjA3OGY3ODNlYzg0NjAyZTVlNWFmYiIsImlhdCI6MTY3MjUwOTY4NywiZXhwIjoxNjcyNTk2MDg3fQ.Ceau7rqB9N6EGEtHZdQejHOhTyPgMPsY3Kqg1xw73NE
+content-type: application/json
